@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Bookly.Services/BooklyShop.Services.csproj" Id="70a92a41-6ed2-4ad9-a1dc-5bf46f0fc3c1" />
   <Project Path="BooklyShop.Presentation/BooklyShop.Presentation.csproj" />
+  <Project Path="BooklyShop.Repositories/BooklyShop.Repositories.csproj" Id="d042ffc7-8045-4009-b32b-6ea1673a5380" />
 </Solution>

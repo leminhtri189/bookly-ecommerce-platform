@@ -1,0 +1,42 @@
+@model IReadOnlyList<BooklyShop.Presentation.Models.BookViewModel>
+
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0">Books</h1>
+    <a class="btn btn-outline-dark" asp-controller="Cart" asp-action="Index">View Cart</a>
+</div>
+
+<div class="row g-3">
+    @foreach (var book in Model)
+    {
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5 class="card-title mb-1">@book.Title</h5>
+                            <div class="text-muted">@book.Author</div>
+                        </div>
+                        <div class="fw-semibold">@book.Price.ToString("0.00")</div>
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(book.Description))
+                    {
+                        <p class="card-text mt-3">@book.Description</p>
+                    }
+                </div>
+                <div class="card-footer bg-white d-flex gap-2">
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@book.Id">Details</a>
+                    <form asp-action="AddToCart" asp-route-id="@book.Id" method="post" class="ms-auto">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="quantity" value="1" />
+                        <button type="submit" class="btn btn-sm btn-dark">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
