@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="CloudDiary\" />
+    <Folder Include="Payment\" />
+    <Folder Include="Password\" />
+  </ItemGroup>
+
 </Project>
