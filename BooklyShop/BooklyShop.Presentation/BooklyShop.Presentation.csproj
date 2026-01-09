@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bookly.BusinessLogicLayer\BooklyShop.BusinessLogicLayer.csproj" />
+    <ProjectReference Include="..\BooklyShop.Repositories\BooklyShop.BusinessObject.csproj" />
+    <ProjectReference Include="..\BooklyShop.SharedLibrary\BooklyShop.SharedLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

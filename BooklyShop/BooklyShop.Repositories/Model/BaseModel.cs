@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BooklyShop.BusinessObject.Model
 {
-    public class BaseModel
+    public abstract class BaseModel
     {
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; } 
