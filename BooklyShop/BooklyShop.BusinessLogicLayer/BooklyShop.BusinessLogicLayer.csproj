@@ -7,9 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commons\Mapping\" />
-    <Folder Include="Services\Implementation\" />
-    <Folder Include="Services\Imterfaces\" />
+    <Folder Include="Commons\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

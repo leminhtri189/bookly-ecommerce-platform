@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="Bookly.BusinessLogicLayer/BooklyShop.BusinessLogicLayer.csproj" Id="e9ea46a5-b3ff-4a6a-8eac-f9a9e8ca8758" />
-  <Project Path="Bookly.Services/BooklyShop.DataAccessLayer.csproj" Id="70a92a41-6ed2-4ad9-a1dc-5bf46f0fc3c1" />
+  <Project Path="BooklyShop.BusinessLogicLayer/BooklyShop.BusinessLogicLayer.csproj" Id="dfe34bd8-73b2-482b-9751-600c4d390fd7" />
+  <Project Path="BooklyShop.BusinessObject/BooklyShop.BusinessObject.csproj" Id="da4006c3-d856-4579-9b05-1030fd420c76" />
+  <Project Path="BooklyShop.DataAccessLayer/BooklyShop.DataAccessLayer.csproj" Id="916e4751-acde-4a4c-8d60-e1f273b783ea" />
   <Project Path="BooklyShop.Presentation/BooklyShop.Presentation.csproj" />
-  <Project Path="BooklyShop.Repositories/BooklyShop.BusinessObject.csproj" Id="d042ffc7-8045-4009-b32b-6ea1673a5380" />
   <Project Path="BooklyShop.SharedLibrary/BooklyShop.SharedLibrary.csproj" Id="4d3bf02d-620b-4179-b53b-e419bfa313f4" />
 </Solution>
